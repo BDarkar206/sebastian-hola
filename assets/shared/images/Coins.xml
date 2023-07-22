@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Coins.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="coins0000" x="3" y="3" width="733" height="282"/>
+	<SubTexture name="coins0001" x="3" y="3" width="733" height="282"/>
+	<SubTexture name="coins0002" x="738" y="3" width="665" height="282" frameX="-33" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0003" x="738" y="3" width="665" height="282" frameX="-33" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0004" x="1405" y="3" width="596" height="282" frameX="-67" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0005" x="1405" y="3" width="596" height="282" frameX="-67" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0006" x="3" y="287" width="553" height="282" frameX="-87" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0007" x="3" y="287" width="553" height="282" frameX="-87" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0008" x="558" y="287" width="581" height="282" frameX="-74" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0009" x="558" y="287" width="581" height="282" frameX="-74" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0010" x="1141" y="287" width="636" height="282" frameX="-47" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0011" x="1141" y="287" width="636" height="282" frameX="-47" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0012" x="3" y="571" width="701" height="282" frameX="-13" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0013" x="3" y="571" width="701" height="282" frameX="-13" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0014" x="706" y="571" width="716" height="282" frameX="-6" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0015" x="706" y="571" width="716" height="282" frameX="-6" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0016" x="3" y="571" width="701" height="282" frameX="-13" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0017" x="3" y="571" width="701" height="282" frameX="-13" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0018" x="1141" y="287" width="636" height="282" frameX="-47" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0019" x="1141" y="287" width="636" height="282" frameX="-47" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0020" x="558" y="287" width="581" height="282" frameX="-74" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0021" x="558" y="287" width="581" height="282" frameX="-74" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0022" x="3" y="287" width="553" height="282" frameX="-87" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0023" x="3" y="287" width="553" height="282" frameX="-87" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0024" x="1405" y="3" width="596" height="282" frameX="-67" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0025" x="1405" y="3" width="596" height="282" frameX="-67" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0026" x="738" y="3" width="665" height="282" frameX="-33" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0027" x="738" y="3" width="665" height="282" frameX="-33" frameY="0" frameWidth="733" frameHeight="282"/>
+	<SubTexture name="coins0028" x="3" y="3" width="733" height="282"/>
+	<SubTexture name="coins0029" x="3" y="3" width="733" height="282"/>
+</TextureAtlas>
