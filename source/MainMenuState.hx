@@ -77,6 +77,7 @@ class MainMenuState extends MusicBeatState
 		WeekData.reloadWeekFiles(false);
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
+
 		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBGneon'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
@@ -90,12 +91,7 @@ class MainMenuState extends MusicBeatState
 		add(camFollow);
 		add(camFollowPos);
 
-		var render:FlxSprite = new FlxSprite(0).loadGraphic(Paths.image('sebastianrender'));
-		render.updateHitbox();
-		render.x = 1000;
-		add(render);
-
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuBGneon'));
+		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
 		magenta.scrollFactor.set(0, yScroll);
 		magenta.setGraphicSize(Std.int(magenta.width * 1.175));
 		magenta.updateHitbox();
@@ -106,6 +102,23 @@ class MainMenuState extends MusicBeatState
 		add(magenta);
 		
 		// magenta.scrollFactor.set();
+
+		var blacklol:FlxSprite = new FlxSprite(-40).loadGraphic(Paths.image('Main_Side'));
+		blacklol.scrollFactor.x = 0;
+		blacklol.scrollFactor.y = 0;
+		blacklol.setGraphicSize(Std.int(blacklol.width * 0.75));
+		blacklol.updateHitbox();
+		blacklol.x = 600;
+		add(blacklol);
+
+		var render:FlxSprite = new FlxSprite(0).loadGraphic(Paths.image('sebastianrender'));
+		render.scrollFactor.x = 0;
+		render.scrollFactor.y = 0;
+		render.setGraphicSize(Std.int(render.width * 0.6));
+		render.updateHitbox();
+		render.x = 750;
+		render.y = 40;
+		add(render);
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
@@ -126,7 +139,7 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
-			menuItem.screenCenter(X);
+			menuItem.x = 100;
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			if(optionShit.length < 6) scr = 0;
@@ -294,10 +307,7 @@ class MainMenuState extends MusicBeatState
 
 		super.update(elapsed);
 
-		menuItems.forEach(function(spr:FlxSprite)
-		{
-			spr.screenCenter(X);
-		});
+		menuItems.forEach(function(spr:FlxSprite){});
 	}
 
 	function changeItem(huh:Int = 0)

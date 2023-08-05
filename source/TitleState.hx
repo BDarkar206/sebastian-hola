@@ -272,7 +272,7 @@ class TitleState extends MusicBeatState
 		add(bg);
 
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
-		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
+		logoBl.frames = Paths.getSparrowAtlas('sebastianbumpin');
 
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
@@ -370,8 +370,8 @@ class TitleState extends MusicBeatState
 		logo.antialiasing = ClientPrefs.globalAntialiasing;
 		// add(logo);
 
-		// FlxTween.tween(logoBl, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG});
-		// FlxTween.tween(logo, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
+		FlxTween.tween(logoBl, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG});
+		FlxTween.tween(logo, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
 
 		credGroup = new FlxGroup();
 		add(credGroup);
@@ -628,20 +628,14 @@ class TitleState extends MusicBeatState
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
-					#if PSYCH_WATERMARKS
-					createCoolText(['Psych Engine by'], 15);
-					#else
-					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
-					#end
+					addMoreText('Lux12', 15);
+					addMoreText('Pivelink', 15);
+					addMoreText('Fabri.FLP', 15);
 				// credTextShit.visible = true;
 				case 4:
-					#if PSYCH_WATERMARKS
-					addMoreText('Shadow Mario', 15);
-					addMoreText('RiverOaken', 15);
-					addMoreText('shubs', 15);
-					#else
-					addMoreText('present');
-					#end
+					addMoreText('RaspyFV', 15);
+					addMoreText('TheSnas', 15);
+					addMoreText('Fabicholas', 15);
 				// credTextShit.text += '\npresent...';
 				// credTextShit.addText();
 				case 5:
@@ -650,13 +644,9 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = 'In association \nwith';
 				// credTextShit.screenCenter();
 				case 6:
-					#if PSYCH_WATERMARKS
-					createCoolText(['Not associated', 'with'], -40);
-					#else
-					createCoolText(['In association', 'with'], -40);
-					#end
+					createCoolText(['We present', 'to you'], -40);
 				case 8:
-					addMoreText('newgrounds', -40);
+					addMoreText('VS. SEBASTIAN', -40);
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 9:
@@ -678,13 +668,13 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 14:
-					addMoreText('Friday');
+					addMoreText('VS');
 				// credTextShit.visible = true;
 				case 15:
-					addMoreText('Night');
+					addMoreText('Sebastian');
 				// credTextShit.text += '\nNight';
 				case 16:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('Hola'); // credTextShit.text += '\nFunkin';
 
 				case 17:
 					skipIntro();
